@@ -32,5 +32,11 @@ export const calculateCarRent = (city_mpg: number, year: number) => {
     const rentalRatePerDay = basePricePerDay + mileageRate + ageRate;
   
     return rentalRatePerDay.toFixed(0);
-  };
+};
+
+// This is a utility function to generate the car images in the Car Details component
+export const generateCarImages = (car: CarProps) => {
+    const { make, model, year} = car;
+
+}
   
